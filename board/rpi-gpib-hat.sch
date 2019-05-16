@@ -225,50 +225,6 @@ GPIO20
 Text Label 2500 2900 2    50   ~ 0
 GPIO21
 $Comp
-L Mechanical:MountingHole H1
-U 1 1 5C7C4C81
-P 6150 6900
-F 0 "H1" H 6250 6946 50  0000 L CNN
-F 1 "MountingHole" H 6250 6855 50  0000 L CNN
-F 2 "lib:MountingHole_2.7mm_M2.5_uHAT_RPi" H 6150 6900 50  0001 C CNN
-F 3 "~" H 6150 6900 50  0001 C CNN
-	1    6150 6900
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole H2
-U 1 1 5C7C7FBC
-P 6150 7100
-F 0 "H2" H 6250 7146 50  0000 L CNN
-F 1 "MountingHole" H 6250 7055 50  0000 L CNN
-F 2 "lib:MountingHole_2.7mm_M2.5_uHAT_RPi" H 6150 7100 50  0001 C CNN
-F 3 "~" H 6150 7100 50  0001 C CNN
-	1    6150 7100
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole H3
-U 1 1 5C7C8014
-P 6150 7300
-F 0 "H3" H 6250 7346 50  0000 L CNN
-F 1 "MountingHole" H 6250 7255 50  0000 L CNN
-F 2 "lib:MountingHole_2.7mm_M2.5_uHAT_RPi" H 6150 7300 50  0001 C CNN
-F 3 "~" H 6150 7300 50  0001 C CNN
-	1    6150 7300
-	1    0    0    -1  
-$EndComp
-$Comp
-L Mechanical:MountingHole H4
-U 1 1 5C7C8030
-P 6150 7500
-F 0 "H4" H 6250 7546 50  0000 L CNN
-F 1 "MountingHole" H 6250 7455 50  0000 L CNN
-F 2 "lib:MountingHole_2.7mm_M2.5_uHAT_RPi" H 6150 7500 50  0001 C CNN
-F 3 "~" H 6150 7500 50  0001 C CNN
-	1    6150 7500
-	1    0    0    -1  
-$EndComp
-$Comp
 L Connector_Generic:Conn_02x12_Top_Bottom J2
 U 1 1 5CDDDFED
 P 1600 4100
