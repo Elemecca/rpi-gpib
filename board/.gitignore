@@ -1,0 +1,10 @@
+# KiCAD backup files
+*.bck
+*.bak
+*-bak
+
+# KiCAD cache
+fp-info-cache
+
+# generated netlist
+*.net
