@@ -8,3 +8,6 @@ fp-info-cache
 
 # generated netlist
 *.net
+
+# plot output
+/dist/
