@@ -1,0 +1,15 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP D_Schottky_x2_KCom_AAK_Split
+D Schottky diode
+K diode Schottky
+F ~
+$ENDCMP
+#
+$CMP SN75162BDW
+D Octal general-purpose interface bus transceiver, SOIC-20
+K gpib bidirectional bus transceiver
+F http://www.ti.com/lit/ds/symlink/sn75161b.pdf
+$ENDCMP
+#
+#End Doc Library
