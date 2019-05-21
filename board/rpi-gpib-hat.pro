@@ -1,4 +1,4 @@
-update=Sat 18 May 2019 05:49:49 AM PDT
+update=Mon 20 May 2019 05:29:22 PM PDT
 version=1
 last_client=kicad
 [general]
@@ -12,9 +12,19 @@ NetIExt=net
 version=1
 LibDir=
 [eeschema/libraries]
+[schematic_editor]
+version=1
+PageLayoutDescrFile=sch_frame.kicad_wks
+PlotDirectoryName=dist
+SubpartIdSeparator=0
+SubpartFirstId=65
+NetFmtName=Pcbnew
+SpiceAjustPassiveValues=0
+LabSize=50
+ERC_TestSimilarLabels=1
 [pcbnew]
 version=1
-PageLayoutDescrFile=
+PageLayoutDescrFile=sch_frame.kicad_wks
 LastNetListRead=rpi-gpib-hat.net
 CopperLayerCount=2
 BoardThickness=1.6

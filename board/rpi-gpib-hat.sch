@@ -5,11 +5,11 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title "Raspberry Pi Zero (W) uHAT Template Board"
-Date "2019-02-28"
-Rev "1.0"
-Comp ""
-Comment1 "This Schematic is licensed under MIT Open Source License."
+Title "Raspberry Pi GPIB µHAT"
+Date "2019-05-17"
+Rev "0.1"
+Comp "© 2019 Sam Hanes. Licensed under CERN OHL v1.2."
+Comment1 "https://github.com/Elemecca/rpi-gpib"
 Comment2 ""
 Comment3 ""
 Comment4 ""
