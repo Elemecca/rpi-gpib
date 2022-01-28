@@ -1,0 +1,439 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector_Generic:Conn_02x12_Top_Bottom J1
+U 1 1 61F395DA
+P 9450 2500
+F 0 "J1" H 9500 3217 50  0000 C CNN
+F 1 "GPIB" H 9500 3126 50  0000 C CNN
+F 2 "local:NorComp_112-024-113R001" H 9450 2500 50  0001 C CNN
+F 3 "~" H 9450 2500 50  0001 C CNN
+	1    9450 2500
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9750 2000 10000 2000
+Wire Wire Line
+	9750 2100 10000 2100
+Wire Wire Line
+	9750 2200 10000 2200
+Wire Wire Line
+	9750 2300 10000 2300
+Wire Wire Line
+	9750 2400 10000 2400
+Wire Wire Line
+	9250 2000 9000 2000
+Wire Wire Line
+	9250 2100 9000 2100
+Wire Wire Line
+	9250 2200 9000 2200
+Wire Wire Line
+	9250 2300 9000 2300
+Wire Wire Line
+	9250 2400 9000 2400
+Wire Wire Line
+	9250 2500 9000 2500
+Wire Wire Line
+	9250 2600 9000 2600
+Wire Wire Line
+	9250 2700 9000 2700
+Wire Wire Line
+	9250 2800 9000 2800
+Wire Wire Line
+	9250 2900 9000 2900
+Wire Wire Line
+	9250 3000 9000 3000
+Text Label 9000 2000 0    50   ~ 0
+DIO1
+Text Label 9000 2100 0    50   ~ 0
+DIO2
+Text Label 9000 2200 0    50   ~ 0
+DIO3
+Text Label 9000 2300 0    50   ~ 0
+DIO4
+Text Label 9000 2400 0    50   ~ 0
+EOI
+Text Label 9000 2500 0    50   ~ 0
+DAV
+Text Label 9000 2600 0    50   ~ 0
+NRFD
+Text Label 9000 2700 0    50   ~ 0
+NDAC
+Text Label 9000 2800 0    50   ~ 0
+IFC
+Text Label 9000 2900 0    50   ~ 0
+SRQ
+Text Label 9000 3000 0    50   ~ 0
+ATN
+Text Label 10000 2000 2    50   ~ 0
+DIO5
+Text Label 10000 2100 2    50   ~ 0
+DIO6
+Text Label 10000 2200 2    50   ~ 0
+DIO7
+Text Label 10000 2300 2    50   ~ 0
+DIO8
+Text Label 10000 2400 2    50   ~ 0
+REN
+Wire Wire Line
+	9250 3100 9150 3100
+Wire Wire Line
+	9150 3100 9150 3200
+$Comp
+L power:Earth_Protective #PWR0101
+U 1 1 61F4529B
+P 9150 3200
+F 0 "#PWR0101" H 9400 2950 50  0001 C CNN
+F 1 "Earth_Protective" H 9600 3050 50  0001 C CNN
+F 2 "" H 9150 3100 50  0001 C CNN
+F 3 "~" H 9150 3100 50  0001 C CNN
+	1    9150 3200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 61F45E35
+P 9850 3200
+F 0 "#PWR0102" H 9850 2950 50  0001 C CNN
+F 1 "GND" H 9855 3027 50  0000 C CNN
+F 2 "" H 9850 3200 50  0001 C CNN
+F 3 "" H 9850 3200 50  0001 C CNN
+	1    9850 3200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9750 2500 9850 2500
+Wire Wire Line
+	9850 2500 9850 2600
+Wire Wire Line
+	9750 2600 9850 2600
+Connection ~ 9850 2600
+Wire Wire Line
+	9850 2600 9850 2700
+Wire Wire Line
+	9750 2700 9850 2700
+Connection ~ 9850 2700
+Wire Wire Line
+	9850 2700 9850 2800
+Wire Wire Line
+	9750 2800 9850 2800
+Connection ~ 9850 2800
+Wire Wire Line
+	9850 2800 9850 2900
+Wire Wire Line
+	9750 2900 9850 2900
+Connection ~ 9850 2900
+Wire Wire Line
+	9850 2900 9850 3000
+Wire Wire Line
+	9750 3000 9850 3000
+Connection ~ 9850 3000
+Wire Wire Line
+	9850 3000 9850 3100
+Wire Wire Line
+	9750 3100 9850 3100
+Connection ~ 9850 3100
+Wire Wire Line
+	9850 3100 9850 3200
+$Comp
+L Connector_Generic:Conn_02x20_Odd_Even J3
+U 1 1 61F54469
+P 1950 2250
+F 0 "J3" H 2000 3367 50  0000 C CNN
+F 1 "RPI_GPIO" H 2000 3276 50  0000 C CNN
+F 2 "lib:PinSocket_2x20_P2.54mm_Vertical_Centered_Anchor" H 1950 2250 50  0001 C CNN
+F 3 "~" H 1950 2250 50  0001 C CNN
+	1    1950 2250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Connector:USB_B_Micro J2
+U 1 1 61F5C316
+P 2200 4600
+F 0 "J2" H 2257 5067 50  0000 C CNN
+F 1 "USB_B_Micro" H 2257 4976 50  0000 C CNN
+F 2 "Connector_USB:USB_Micro-B_Amphenol_10118194_Horizontal" H 2350 4550 50  0001 C CNN
+F 3 "~" H 2350 4550 50  0001 C CNN
+	1    2200 4600
+	1    0    0    -1  
+$EndComp
+$Comp
+L Interface:SN75160BDW U2
+U 1 1 61F5D28D
+P 4800 2800
+F 0 "U2" H 5150 2400 50  0000 L CNN
+F 1 "SN75160BDW" H 5150 2300 50  0000 L CNN
+F 2 "Package_SO:SOIC-20W_7.5x12.8mm_P1.27mm" H 4800 2500 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/sn75160b.pdf" H 4750 3150 50  0001 C CNN
+	1    4800 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L local:SN75162BDW U3
+U 1 1 61F5E696
+P 6800 2750
+F 0 "U3" H 7150 2250 50  0000 L CNN
+F 1 "SN75162BDW" H 7150 2150 50  0000 L CNN
+F 2 "Package_SO:SOIC-24W_7.5x15.4mm_P1.27mm" H 6800 2450 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/sn75161b.pdf" H 6750 3100 50  0001 C CNN
+	1    6800 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0103
+U 1 1 61F5FD37
+P 4800 3500
+F 0 "#PWR0103" H 4800 3250 50  0001 C CNN
+F 1 "GND" H 4805 3327 50  0000 C CNN
+F 2 "" H 4800 3500 50  0001 C CNN
+F 3 "" H 4800 3500 50  0001 C CNN
+	1    4800 3500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0104
+U 1 1 61F60002
+P 6800 3550
+F 0 "#PWR0104" H 6800 3300 50  0001 C CNN
+F 1 "GND" H 6805 3377 50  0000 C CNN
+F 2 "" H 6800 3550 50  0001 C CNN
+F 3 "" H 6800 3550 50  0001 C CNN
+	1    6800 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0105
+U 1 1 61F608AF
+P 4800 2100
+F 0 "#PWR0105" H 4800 1950 50  0001 C CNN
+F 1 "+5V" H 4815 2273 50  0000 C CNN
+F 2 "" H 4800 2100 50  0001 C CNN
+F 3 "" H 4800 2100 50  0001 C CNN
+	1    4800 2100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0106
+U 1 1 61F60ED7
+P 6800 2050
+F 0 "#PWR0106" H 6800 1900 50  0001 C CNN
+F 1 "+5V" H 6815 2223 50  0000 C CNN
+F 2 "" H 6800 2050 50  0001 C CNN
+F 3 "" H 6800 2050 50  0001 C CNN
+	1    6800 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2250 1550 2400 1550
+Wire Wire Line
+	2400 1550 2400 1950
+Wire Wire Line
+	2250 1950 2400 1950
+Connection ~ 2400 1950
+Wire Wire Line
+	2400 1950 2400 2250
+Wire Wire Line
+	2250 2250 2400 2250
+Connection ~ 2400 2250
+Wire Wire Line
+	2400 2250 2400 2750
+Wire Wire Line
+	2250 2750 2400 2750
+Connection ~ 2400 2750
+Wire Wire Line
+	2400 2750 2400 2950
+Wire Wire Line
+	2250 2950 2400 2950
+Connection ~ 2400 2950
+Wire Wire Line
+	2400 2950 2400 3400
+Wire Wire Line
+	1750 1750 1600 1750
+Wire Wire Line
+	1600 1750 1600 2550
+Wire Wire Line
+	1750 2550 1600 2550
+Connection ~ 1600 2550
+Wire Wire Line
+	1600 2550 1600 3250
+Wire Wire Line
+	1750 3250 1600 3250
+Connection ~ 1600 3250
+Wire Wire Line
+	1600 3250 1600 3400
+$Comp
+L power:GND #PWR0107
+U 1 1 61F67F09
+P 2400 3400
+F 0 "#PWR0107" H 2400 3150 50  0001 C CNN
+F 1 "GND" H 2405 3227 50  0000 C CNN
+F 2 "" H 2400 3400 50  0001 C CNN
+F 3 "" H 2400 3400 50  0001 C CNN
+	1    2400 3400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0108
+U 1 1 61F681DC
+P 1600 3400
+F 0 "#PWR0108" H 1600 3150 50  0001 C CNN
+F 1 "GND" H 1605 3227 50  0000 C CNN
+F 2 "" H 1600 3400 50  0001 C CNN
+F 3 "" H 1600 3400 50  0001 C CNN
+	1    1600 3400
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2200 5000 2200 5100
+Wire Wire Line
+	2200 5100 2300 5100
+Wire Wire Line
+	2300 5100 2300 5200
+Wire Wire Line
+	2100 5000 2100 5100
+Wire Wire Line
+	2100 5100 2000 5100
+Wire Wire Line
+	2000 5100 2000 5200
+$Comp
+L power:GND #PWR0109
+U 1 1 61F6AFBB
+P 2300 5200
+F 0 "#PWR0109" H 2300 4950 50  0001 C CNN
+F 1 "GND" H 2305 5027 50  0000 C CNN
+F 2 "" H 2300 5200 50  0001 C CNN
+F 3 "" H 2300 5200 50  0001 C CNN
+	1    2300 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:Earth_Protective #PWR0110
+U 1 1 61F6B2D1
+P 2000 5200
+F 0 "#PWR0110" H 2250 4950 50  0001 C CNN
+F 1 "Earth_Protective" H 2450 5050 50  0001 C CNN
+F 2 "" H 2000 5100 50  0001 C CNN
+F 3 "~" H 2000 5100 50  0001 C CNN
+	1    2000 5200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7200 2250 7500 2250
+Wire Wire Line
+	7200 2350 7500 2350
+Wire Wire Line
+	7200 2450 7500 2450
+Wire Wire Line
+	7200 2550 7500 2550
+Wire Wire Line
+	7200 2650 7500 2650
+Wire Wire Line
+	7200 2750 7500 2750
+Wire Wire Line
+	7200 2850 7500 2850
+Wire Wire Line
+	7200 2950 7500 2950
+Wire Wire Line
+	6400 2250 6000 2250
+Wire Wire Line
+	6400 2350 6000 2350
+Wire Wire Line
+	6400 2450 6000 2450
+Wire Wire Line
+	6400 2550 6000 2550
+Wire Wire Line
+	6400 2650 6000 2650
+Wire Wire Line
+	6400 2750 6000 2750
+Wire Wire Line
+	6400 2850 6000 2850
+Wire Wire Line
+	6400 2950 6000 2950
+Wire Wire Line
+	6400 3150 6000 3150
+Wire Wire Line
+	6400 3250 6000 3250
+Wire Wire Line
+	6400 3350 6000 3350
+Text Label 7500 2250 2    50   ~ 0
+REN
+Text Label 7500 2350 2    50   ~ 0
+IFC
+Text Label 7500 2450 2    50   ~ 0
+NDAC
+Text Label 7500 2550 2    50   ~ 0
+NRFD
+Text Label 7500 2650 2    50   ~ 0
+DAV
+Text Label 7500 2750 2    50   ~ 0
+EOI
+Text Label 7500 2850 2    50   ~ 0
+ATN
+Text Label 7500 2950 2    50   ~ 0
+SRQ
+Wire Wire Line
+	5200 2300 5500 2300
+Wire Wire Line
+	5200 2400 5500 2400
+Wire Wire Line
+	5200 2500 5500 2500
+Wire Wire Line
+	5200 2600 5500 2600
+Wire Wire Line
+	5200 2700 5500 2700
+Wire Wire Line
+	5200 2800 5500 2800
+Wire Wire Line
+	5200 2900 5500 2900
+Wire Wire Line
+	5200 3000 5500 3000
+Wire Wire Line
+	4400 2300 4000 2300
+Wire Wire Line
+	4400 2400 4000 2400
+Wire Wire Line
+	4400 2500 4000 2500
+Wire Wire Line
+	4400 2600 4000 2600
+Wire Wire Line
+	4400 2700 4000 2700
+Wire Wire Line
+	4400 2800 4000 2800
+Wire Wire Line
+	4400 2900 4000 2900
+Wire Wire Line
+	4400 3000 4000 3000
+Wire Wire Line
+	4400 3200 4000 3200
+Wire Wire Line
+	4400 3300 4000 3300
+Text Label 5500 2300 2    50   ~ 0
+DIO1
+Text Label 5500 2400 2    50   ~ 0
+DIO2
+Text Label 5500 2500 2    50   ~ 0
+DIO3
+Text Label 5500 2600 2    50   ~ 0
+DIO4
+Text Label 5500 2700 2    50   ~ 0
+DIO5
+Text Label 5500 2800 2    50   ~ 0
+DIO6
+Text Label 5500 2900 2    50   ~ 0
+DIO7
+Text Label 5500 3000 2    50   ~ 0
+DIO8
+$EndSCHEMATC
