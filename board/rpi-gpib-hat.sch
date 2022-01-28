@@ -6,8 +6,8 @@ encoding utf-8
 Sheet 1 1
 Title "Raspberry Pi GPIB µHAT"
 Date "2019-05-17"
-Rev "0.1"
-Comp "© 2019 Sam Hanes. Licensed under CERN OHL v1.2."
+Rev "0.2"
+Comp "© 2022 Sam Hanes. Licensed under CERN OHL v1.2."
 Comment1 "https://github.com/Elemecca/rpi-gpib"
 Comment2 ""
 Comment3 ""
@@ -1507,7 +1507,7 @@ L Device:R R1
 U 1 1 61F4533C
 P 5500 6250
 F 0 "R1" V 5400 6200 50  0000 L CNN
-F 1 "100" V 5500 6250 50  0000 C CNN
+F 1 "100R" V 5500 6250 50  0000 C CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" V 5430 6250 50  0001 C CNN
 F 3 "~" H 5500 6250 50  0001 C CNN
 	1    5500 6250
@@ -1518,7 +1518,7 @@ L Device:R R2
 U 1 1 61F46E7A
 P 5500 6750
 F 0 "R2" V 5400 6700 50  0000 L CNN
-F 1 "100" V 5500 6750 50  0000 C CNN
+F 1 "100R" V 5500 6750 50  0000 C CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" V 5430 6750 50  0001 C CNN
 F 3 "~" H 5500 6750 50  0001 C CNN
 	1    5500 6750
