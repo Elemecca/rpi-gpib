@@ -1,0 +1,1430 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 2 2
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Connector_Generic:Conn_02x12_Top_Bottom J?
+U 1 1 620707C1
+P 8950 3250
+AR Path="/620707C1" Ref="J?"  Part="1" 
+AR Path="/62065D04/620707C1" Ref="J1"  Part="1" 
+F 0 "J1" H 9000 3967 50  0000 C CNN
+F 1 "GPIB" H 9000 3876 50  0000 C CNN
+F 2 "local:NorComp_112-024-113R001" H 8950 3250 50  0001 C CNN
+F 3 "~" H 8950 3250 50  0001 C CNN
+	1    8950 3250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9250 2750 9550 2750
+Wire Wire Line
+	9250 2850 9550 2850
+Wire Wire Line
+	9250 2950 9550 2950
+Wire Wire Line
+	9250 3050 9550 3050
+Wire Wire Line
+	9250 3150 9550 3150
+Wire Wire Line
+	8750 2750 8450 2750
+Wire Wire Line
+	8750 2850 8450 2850
+Wire Wire Line
+	8750 2950 8450 2950
+Wire Wire Line
+	8750 3050 8450 3050
+Wire Wire Line
+	8750 3150 8450 3150
+Wire Wire Line
+	8750 3250 8450 3250
+Wire Wire Line
+	8750 3350 8450 3350
+Wire Wire Line
+	8750 3450 8450 3450
+Wire Wire Line
+	8750 3550 8450 3550
+Wire Wire Line
+	8750 3650 8450 3650
+Wire Wire Line
+	8750 3750 8450 3750
+Text Label 8450 2750 0    50   ~ 0
+B_DIO1
+Text Label 8450 2850 0    50   ~ 0
+B_DIO2
+Text Label 8450 2950 0    50   ~ 0
+B_DIO3
+Text Label 8450 3050 0    50   ~ 0
+B_DIO4
+Text Label 8450 3150 0    50   ~ 0
+B_EOI
+Text Label 8450 3250 0    50   ~ 0
+B_DAV
+Text Label 8450 3350 0    50   ~ 0
+B_~RFD
+Text Label 8450 3450 0    50   ~ 0
+B_~DAC
+Text Label 8450 3550 0    50   ~ 0
+B_IFC
+Text Label 8450 3650 0    50   ~ 0
+B_SRQ
+Text Label 8450 3750 0    50   ~ 0
+B_ATN
+Text Label 9550 2750 2    50   ~ 0
+B_DIO5
+Text Label 9550 2850 2    50   ~ 0
+B_DIO6
+Text Label 9550 2950 2    50   ~ 0
+B_DIO7
+Text Label 9550 3050 2    50   ~ 0
+B_DIO8
+Text Label 9550 3150 2    50   ~ 0
+B_REN
+Wire Wire Line
+	8750 3850 8650 3850
+Wire Wire Line
+	8650 3850 8650 3950
+$Comp
+L power:GND #PWR?
+U 1 1 620707E9
+P 9350 3950
+AR Path="/620707E9" Ref="#PWR?"  Part="1" 
+AR Path="/62065D04/620707E9" Ref="#PWR0102"  Part="1" 
+F 0 "#PWR0102" H 9350 3700 50  0001 C CNN
+F 1 "GND" H 9355 3777 50  0000 C CNN
+F 2 "" H 9350 3950 50  0001 C CNN
+F 3 "" H 9350 3950 50  0001 C CNN
+	1    9350 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	9250 3250 9350 3250
+Wire Wire Line
+	9350 3250 9350 3350
+Wire Wire Line
+	9250 3350 9350 3350
+Connection ~ 9350 3350
+Wire Wire Line
+	9350 3350 9350 3450
+Wire Wire Line
+	9250 3450 9350 3450
+Connection ~ 9350 3450
+Wire Wire Line
+	9350 3450 9350 3550
+Wire Wire Line
+	9250 3550 9350 3550
+Connection ~ 9350 3550
+Wire Wire Line
+	9350 3550 9350 3650
+Wire Wire Line
+	9250 3650 9350 3650
+Connection ~ 9350 3650
+Wire Wire Line
+	9350 3650 9350 3750
+Wire Wire Line
+	9250 3750 9350 3750
+Connection ~ 9350 3750
+Wire Wire Line
+	9350 3750 9350 3850
+Wire Wire Line
+	9250 3850 9350 3850
+Connection ~ 9350 3850
+$Comp
+L Interface:SN75160BDW U?
+U 1 1 62070802
+P 7000 2300
+AR Path="/62070802" Ref="U?"  Part="1" 
+AR Path="/62065D04/62070802" Ref="U2"  Part="1" 
+F 0 "U2" H 7350 1900 50  0000 L CNN
+F 1 "SN75160BDW" H 7350 1800 50  0000 L CNN
+F 2 "Package_SO:SOIC-20W_7.5x12.8mm_P1.27mm" H 7000 2000 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/sn75160b.pdf" H 6950 2650 50  0001 C CNN
+	1    7000 2300
+	1    0    0    -1  
+$EndComp
+$Comp
+L local:SN75162BDW U?
+U 1 1 62070808
+P 7000 4300
+AR Path="/62070808" Ref="U?"  Part="1" 
+AR Path="/62065D04/62070808" Ref="U3"  Part="1" 
+F 0 "U3" H 7350 3800 50  0000 L CNN
+F 1 "SN75162BDW" H 7350 3700 50  0000 L CNN
+F 2 "Package_SO:SOIC-24W_7.5x15.4mm_P1.27mm" H 7000 4000 50  0001 C CNN
+F 3 "http://www.ti.com/lit/ds/symlink/sn75161b.pdf" H 6950 4650 50  0001 C CNN
+	1    7000 4300
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6207080E
+P 7000 3000
+AR Path="/6207080E" Ref="#PWR?"  Part="1" 
+AR Path="/62065D04/6207080E" Ref="#PWR0103"  Part="1" 
+F 0 "#PWR0103" H 7000 2750 50  0001 C CNN
+F 1 "GND" H 7005 2827 50  0000 C CNN
+F 2 "" H 7000 3000 50  0001 C CNN
+F 3 "" H 7000 3000 50  0001 C CNN
+	1    7000 3000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 62070814
+P 7000 5100
+AR Path="/62070814" Ref="#PWR?"  Part="1" 
+AR Path="/62065D04/62070814" Ref="#PWR0104"  Part="1" 
+F 0 "#PWR0104" H 7000 4850 50  0001 C CNN
+F 1 "GND" H 7005 4927 50  0000 C CNN
+F 2 "" H 7000 5100 50  0001 C CNN
+F 3 "" H 7000 5100 50  0001 C CNN
+	1    7000 5100
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 6207081A
+P 7000 1600
+AR Path="/6207081A" Ref="#PWR?"  Part="1" 
+AR Path="/62065D04/6207081A" Ref="#PWR0105"  Part="1" 
+F 0 "#PWR0105" H 7000 1450 50  0001 C CNN
+F 1 "+5V" H 7015 1773 50  0000 C CNN
+F 2 "" H 7000 1600 50  0001 C CNN
+F 3 "" H 7000 1600 50  0001 C CNN
+	1    7000 1600
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR?
+U 1 1 62070820
+P 7000 3600
+AR Path="/62070820" Ref="#PWR?"  Part="1" 
+AR Path="/62065D04/62070820" Ref="#PWR0106"  Part="1" 
+F 0 "#PWR0106" H 7000 3450 50  0001 C CNN
+F 1 "+5V" H 7015 3773 50  0000 C CNN
+F 2 "" H 7000 3600 50  0001 C CNN
+F 3 "" H 7000 3600 50  0001 C CNN
+	1    7000 3600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	7400 3800 7700 3800
+Wire Wire Line
+	7400 3900 7700 3900
+Wire Wire Line
+	7400 4000 7700 4000
+Wire Wire Line
+	7400 4100 7700 4100
+Wire Wire Line
+	7400 4200 7700 4200
+Wire Wire Line
+	7400 4300 7700 4300
+Wire Wire Line
+	7400 4400 7700 4400
+Wire Wire Line
+	7400 4500 7700 4500
+Wire Wire Line
+	6600 3800 6200 3800
+Wire Wire Line
+	6600 3900 6200 3900
+Wire Wire Line
+	6600 4000 6200 4000
+Wire Wire Line
+	6600 4100 6200 4100
+Wire Wire Line
+	6600 4200 6200 4200
+Wire Wire Line
+	6600 4300 6200 4300
+Wire Wire Line
+	6600 4400 6200 4400
+Wire Wire Line
+	6600 4500 6200 4500
+Wire Wire Line
+	6600 4700 6200 4700
+Wire Wire Line
+	6600 4800 6200 4800
+Wire Wire Line
+	6600 4900 6200 4900
+Text Label 7700 3800 2    50   ~ 0
+B_REN
+Text Label 7700 3900 2    50   ~ 0
+B_IFC
+Text Label 7700 4000 2    50   ~ 0
+B_~DAC
+Text Label 7700 4100 2    50   ~ 0
+B_~RFD
+Text Label 7700 4200 2    50   ~ 0
+B_DAV
+Text Label 7700 4300 2    50   ~ 0
+B_EOI
+Text Label 7700 4400 2    50   ~ 0
+B_ATN
+Text Label 7700 4500 2    50   ~ 0
+B_SRQ
+Wire Wire Line
+	9350 3850 9350 3950
+Text HLabel 2350 2200 0    50   BiDi ~ 0
+DIO1
+Text HLabel 2350 2300 0    50   BiDi ~ 0
+DIO2
+Text HLabel 2350 2400 0    50   BiDi ~ 0
+DIO3
+Text HLabel 2350 2500 0    50   BiDi ~ 0
+DIO4
+Text HLabel 2350 2600 0    50   BiDi ~ 0
+DIO5
+Text HLabel 2350 2700 0    50   BiDi ~ 0
+DIO6
+Text HLabel 2350 2800 0    50   BiDi ~ 0
+DIO7
+Text HLabel 2350 2900 0    50   BiDi ~ 0
+DIO8
+Text HLabel 2350 3100 0    50   BiDi ~ 0
+REN
+Text HLabel 2350 3200 0    50   BiDi ~ 0
+IFC
+Text HLabel 2350 3300 0    50   BiDi ~ 0
+~DAC
+Text HLabel 2350 3400 0    50   BiDi ~ 0
+~RFD
+Text HLabel 2350 3500 0    50   BiDi ~ 0
+DAV
+Text HLabel 2350 3600 0    50   BiDi ~ 0
+EOI
+Text HLabel 2350 3700 0    50   BiDi ~ 0
+ATN
+Text HLabel 2350 3800 0    50   BiDi ~ 0
+SRQ
+Text HLabel 2350 4200 0    50   Input ~ 0
+TE
+Text HLabel 2350 4300 0    50   Input ~ 0
+~PE
+Text HLabel 2350 4100 0    50   Input ~ 0
+SC
+Text HLabel 2350 4000 0    50   Input ~ 0
+DC
+Text HLabel 2350 2000 0    50   Input ~ 0
++5V
+Text HLabel 2350 4450 0    50   Input ~ 0
+GND
+$Comp
+L power:+5V #PWR?
+U 1 1 62092434
+P 2500 1900
+AR Path="/62092434" Ref="#PWR?"  Part="1" 
+AR Path="/62065D04/62092434" Ref="#PWR0114"  Part="1" 
+F 0 "#PWR0114" H 2500 1750 50  0001 C CNN
+F 1 "+5V" H 2515 2073 50  0000 C CNN
+F 2 "" H 2500 1900 50  0001 C CNN
+F 3 "" H 2500 1900 50  0001 C CNN
+	1    2500 1900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2350 2000 2500 2000
+Wire Wire Line
+	2500 2000 2500 1900
+Wire Wire Line
+	2350 2200 2600 2200
+Wire Wire Line
+	2350 2300 2600 2300
+Wire Wire Line
+	2350 2400 2600 2400
+Wire Wire Line
+	2350 2500 2600 2500
+Wire Wire Line
+	2350 2600 2600 2600
+Wire Wire Line
+	2350 2700 2600 2700
+Wire Wire Line
+	2350 2800 2600 2800
+Wire Wire Line
+	2350 2900 2600 2900
+Wire Wire Line
+	2350 3100 2600 3100
+Wire Wire Line
+	2350 3200 2600 3200
+Wire Wire Line
+	2350 3300 2600 3300
+Wire Wire Line
+	2350 3400 2600 3400
+Wire Wire Line
+	2350 3500 2600 3500
+Wire Wire Line
+	2350 3600 2600 3600
+Wire Wire Line
+	2350 3700 2600 3700
+Wire Wire Line
+	2350 3800 2600 3800
+Wire Wire Line
+	2350 4200 2600 4200
+Wire Wire Line
+	2350 4100 2600 4100
+Wire Wire Line
+	2350 4000 2600 4000
+Wire Wire Line
+	2350 4300 2600 4300
+Text Label 2600 2200 2    50   ~ 0
+DIO1
+Text Label 2600 2300 2    50   ~ 0
+DIO2
+Text Label 2600 2400 2    50   ~ 0
+DIO3
+Text Label 2600 2500 2    50   ~ 0
+DIO4
+Text Label 2600 2600 2    50   ~ 0
+DIO5
+Text Label 2600 2700 2    50   ~ 0
+DIO6
+Text Label 2600 2800 2    50   ~ 0
+DIO7
+Text Label 2600 2900 2    50   ~ 0
+DIO8
+Text Label 2600 3100 2    50   ~ 0
+REN
+Text Label 2600 3200 2    50   ~ 0
+IFC
+Text Label 2600 3300 2    50   ~ 0
+~DAC
+Text Label 2600 3400 2    50   ~ 0
+~RFD
+Text Label 2600 3500 2    50   ~ 0
+DAV
+Text Label 2600 3600 2    50   ~ 0
+EOI
+Text Label 2600 3700 2    50   ~ 0
+ATN
+Text Label 2600 3800 2    50   ~ 0
+SRQ
+Text Label 2600 4200 2    50   ~ 0
+TE
+Text Label 2600 4100 2    50   ~ 0
+SC
+Text Label 2600 4000 2    50   ~ 0
+DC
+Text Label 2600 4300 2    50   ~ 0
+~PE
+Text Label 6300 1800 0    50   ~ 0
+I_DIO1
+Text Label 6300 1900 0    50   ~ 0
+I_DIO2
+Text Label 6300 2000 0    50   ~ 0
+I_DIO3
+Text Label 6300 2100 0    50   ~ 0
+I_DIO4
+Text Label 6300 2200 0    50   ~ 0
+I_DIO5
+Text Label 6300 2300 0    50   ~ 0
+I_DIO6
+Text Label 6300 2400 0    50   ~ 0
+I_DIO7
+Text Label 6300 2500 0    50   ~ 0
+I_DIO8
+Wire Wire Line
+	6300 1800 6600 1800
+Wire Wire Line
+	6300 1900 6600 1900
+Wire Wire Line
+	6300 2000 6600 2000
+Wire Wire Line
+	6300 2100 6600 2100
+Wire Wire Line
+	6300 2200 6600 2200
+Wire Wire Line
+	6300 2300 6600 2300
+Wire Wire Line
+	6300 2400 6600 2400
+Wire Wire Line
+	6300 2500 6600 2500
+Text Label 7750 2500 2    50   ~ 0
+B_DIO8
+Text Label 7750 2400 2    50   ~ 0
+B_DIO7
+Text Label 7750 2300 2    50   ~ 0
+B_DIO6
+Text Label 7750 2200 2    50   ~ 0
+B_DIO5
+Text Label 7750 2100 2    50   ~ 0
+B_DIO4
+Text Label 7750 2000 2    50   ~ 0
+B_DIO3
+Text Label 7750 1900 2    50   ~ 0
+B_DIO2
+Text Label 7750 1800 2    50   ~ 0
+B_DIO1
+Wire Wire Line
+	7400 2500 7750 2500
+Wire Wire Line
+	7400 2400 7750 2400
+Wire Wire Line
+	7400 2300 7750 2300
+Wire Wire Line
+	7400 2200 7750 2200
+Wire Wire Line
+	7400 2100 7750 2100
+Wire Wire Line
+	7400 2000 7750 2000
+Wire Wire Line
+	7400 1900 7750 1900
+Wire Wire Line
+	7400 1800 7750 1800
+Wire Wire Line
+	6600 2700 6300 2700
+Wire Wire Line
+	6600 2800 6300 2800
+Text Label 6300 2700 0    50   ~ 0
+TE
+Text Label 6300 2800 0    50   ~ 0
+~PE
+Text Label 6200 3800 0    50   ~ 0
+I_REN
+Text Label 6200 3900 0    50   ~ 0
+I_IFC
+Text Label 6200 4000 0    50   ~ 0
+I_~DAC
+Text Label 6200 4100 0    50   ~ 0
+I_~RFD
+Text Label 6200 4200 0    50   ~ 0
+I_DAV
+Text Label 6200 4300 0    50   ~ 0
+I_EOI
+Text Label 6200 4400 0    50   ~ 0
+I_ATN
+Text Label 6200 4500 0    50   ~ 0
+I_SRQ
+Text Label 6200 4700 0    50   ~ 0
+DC
+Text Label 6200 4800 0    50   ~ 0
+SC
+Text Label 6200 4900 0    50   ~ 0
+TE
+$Comp
+L Device:R R1
+U 1 1 62211DE6
+P 4750 1750
+F 0 "R1" V 4700 1900 50  0000 C CNN
+F 1 "R" V 4750 1750 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 4680 1750 50  0001 C CNN
+F 3 "~" H 4750 1750 50  0001 C CNN
+	1    4750 1750
+	0    1    1    0   
+$EndComp
+$Comp
+L local:D_Schottky_x2_KCom_AAK_Split D1
+U 1 1 62212D11
+P 4200 1650
+F 0 "D1" H 4350 1700 50  0000 C CNN
+F 1 "D_Schottky_x2_KCom_AAK_Split" H 4200 1775 50  0001 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 4200 1650 50  0001 C CNN
+F 3 "~" H 4200 1650 50  0001 C CNN
+	1    4200 1650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 1750 5350 1750
+Text Label 5350 1750 2    50   ~ 0
+I_DIO1
+Text Label 3550 1750 0    50   ~ 0
+DIO1
+$Comp
+L power:+2V5 #PWR0115
+U 1 1 622E85F4
+P 3950 1350
+F 0 "#PWR0115" H 3950 1200 50  0001 C CNN
+F 1 "+2V5" H 3965 1523 50  0000 C CNN
+F 2 "" H 3950 1350 50  0001 C CNN
+F 3 "" H 3950 1350 50  0001 C CNN
+	1    3950 1350
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3550 1750 4500 1750
+Wire Wire Line
+	4350 1650 4500 1650
+Wire Wire Line
+	4500 1650 4500 1750
+Connection ~ 4500 1750
+Wire Wire Line
+	4500 1750 4600 1750
+$Comp
+L Device:R R2
+U 1 1 6231572C
+P 4750 1950
+F 0 "R2" V 4700 2100 50  0000 C CNN
+F 1 "R" V 4750 1950 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 4680 1950 50  0001 C CNN
+F 3 "~" H 4750 1950 50  0001 C CNN
+	1    4750 1950
+	0    1    1    0   
+$EndComp
+$Comp
+L local:D_Schottky_x2_KCom_AAK_Split D1
+U 2 1 62315732
+P 4200 1850
+F 0 "D1" H 4350 1900 50  0000 C CNN
+F 1 "D_Schottky_x2_KCom_AAK_Split" H 4200 1975 50  0001 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 4200 1850 50  0001 C CNN
+F 3 "~" H 4200 1850 50  0001 C CNN
+	2    4200 1850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 1950 5350 1950
+Text Label 5350 1950 2    50   ~ 0
+I_DIO2
+Text Label 3550 1950 0    50   ~ 0
+DIO2
+Wire Wire Line
+	3550 1950 4500 1950
+Wire Wire Line
+	4350 1850 4500 1850
+Wire Wire Line
+	4500 1850 4500 1950
+Connection ~ 4500 1950
+Wire Wire Line
+	4500 1950 4600 1950
+$Comp
+L Device:R R3
+U 1 1 6231B318
+P 4750 2150
+F 0 "R3" V 4700 2300 50  0000 C CNN
+F 1 "R" V 4750 2150 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 4680 2150 50  0001 C CNN
+F 3 "~" H 4750 2150 50  0001 C CNN
+	1    4750 2150
+	0    1    1    0   
+$EndComp
+$Comp
+L local:D_Schottky_x2_KCom_AAK_Split D2
+U 1 1 6231B31E
+P 4200 2050
+F 0 "D2" H 4350 2100 50  0000 C CNN
+F 1 "D_Schottky_x2_KCom_AAK_Split" H 4200 2175 50  0001 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 4200 2050 50  0001 C CNN
+F 3 "~" H 4200 2050 50  0001 C CNN
+	1    4200 2050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 2150 5350 2150
+Text Label 5350 2150 2    50   ~ 0
+I_DIO3
+Text Label 3550 2150 0    50   ~ 0
+DIO3
+Wire Wire Line
+	3550 2150 4500 2150
+Wire Wire Line
+	4350 2050 4500 2050
+Wire Wire Line
+	4500 2050 4500 2150
+Connection ~ 4500 2150
+Wire Wire Line
+	4500 2150 4600 2150
+$Comp
+L Device:R R4
+U 1 1 62321801
+P 4750 2350
+F 0 "R4" V 4700 2500 50  0000 C CNN
+F 1 "R" V 4750 2350 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 4680 2350 50  0001 C CNN
+F 3 "~" H 4750 2350 50  0001 C CNN
+	1    4750 2350
+	0    1    1    0   
+$EndComp
+$Comp
+L local:D_Schottky_x2_KCom_AAK_Split D2
+U 2 1 62321807
+P 4200 2250
+F 0 "D2" H 4350 2300 50  0000 C CNN
+F 1 "D_Schottky_x2_KCom_AAK_Split" H 4200 2375 50  0001 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 4200 2250 50  0001 C CNN
+F 3 "~" H 4200 2250 50  0001 C CNN
+	2    4200 2250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 2350 5350 2350
+Text Label 5350 2350 2    50   ~ 0
+I_DIO4
+Text Label 3550 2350 0    50   ~ 0
+DIO4
+Wire Wire Line
+	3550 2350 4500 2350
+Wire Wire Line
+	4350 2250 4500 2250
+Wire Wire Line
+	4500 2250 4500 2350
+Connection ~ 4500 2350
+Wire Wire Line
+	4500 2350 4600 2350
+$Comp
+L Device:R R5
+U 1 1 62330675
+P 4750 2550
+F 0 "R5" V 4700 2700 50  0000 C CNN
+F 1 "R" V 4750 2550 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 4680 2550 50  0001 C CNN
+F 3 "~" H 4750 2550 50  0001 C CNN
+	1    4750 2550
+	0    1    1    0   
+$EndComp
+$Comp
+L local:D_Schottky_x2_KCom_AAK_Split D3
+U 1 1 6233067B
+P 4200 2450
+F 0 "D3" H 4350 2500 50  0000 C CNN
+F 1 "D_Schottky_x2_KCom_AAK_Split" H 4200 2575 50  0001 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 4200 2450 50  0001 C CNN
+F 3 "~" H 4200 2450 50  0001 C CNN
+	1    4200 2450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 2550 5350 2550
+Text Label 5350 2550 2    50   ~ 0
+I_DIO5
+Text Label 3550 2550 0    50   ~ 0
+DIO5
+Wire Wire Line
+	3550 2550 4500 2550
+Wire Wire Line
+	4350 2450 4500 2450
+Wire Wire Line
+	4500 2450 4500 2550
+Connection ~ 4500 2550
+Wire Wire Line
+	4500 2550 4600 2550
+$Comp
+L Device:R R6
+U 1 1 62330689
+P 4750 2750
+F 0 "R6" V 4700 2900 50  0000 C CNN
+F 1 "R" V 4750 2750 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 4680 2750 50  0001 C CNN
+F 3 "~" H 4750 2750 50  0001 C CNN
+	1    4750 2750
+	0    1    1    0   
+$EndComp
+$Comp
+L local:D_Schottky_x2_KCom_AAK_Split D3
+U 2 1 6233068F
+P 4200 2650
+F 0 "D3" H 4350 2700 50  0000 C CNN
+F 1 "D_Schottky_x2_KCom_AAK_Split" H 4200 2775 50  0001 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 4200 2650 50  0001 C CNN
+F 3 "~" H 4200 2650 50  0001 C CNN
+	2    4200 2650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 2750 5350 2750
+Text Label 5350 2750 2    50   ~ 0
+I_DIO6
+Text Label 3550 2750 0    50   ~ 0
+DIO6
+Wire Wire Line
+	3550 2750 4500 2750
+Wire Wire Line
+	4350 2650 4500 2650
+Wire Wire Line
+	4500 2650 4500 2750
+Connection ~ 4500 2750
+Wire Wire Line
+	4500 2750 4600 2750
+$Comp
+L Device:R R7
+U 1 1 6233069D
+P 4750 2950
+F 0 "R7" V 4700 3100 50  0000 C CNN
+F 1 "R" V 4750 2950 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 4680 2950 50  0001 C CNN
+F 3 "~" H 4750 2950 50  0001 C CNN
+	1    4750 2950
+	0    1    1    0   
+$EndComp
+$Comp
+L local:D_Schottky_x2_KCom_AAK_Split D4
+U 1 1 623306A3
+P 4200 2850
+F 0 "D4" H 4350 2900 50  0000 C CNN
+F 1 "D_Schottky_x2_KCom_AAK_Split" H 4200 2975 50  0001 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 4200 2850 50  0001 C CNN
+F 3 "~" H 4200 2850 50  0001 C CNN
+	1    4200 2850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 2950 5350 2950
+Text Label 5350 2950 2    50   ~ 0
+I_DIO7
+Text Label 3550 2950 0    50   ~ 0
+DIO7
+Wire Wire Line
+	3550 2950 4500 2950
+Wire Wire Line
+	4350 2850 4500 2850
+Wire Wire Line
+	4500 2850 4500 2950
+Connection ~ 4500 2950
+Wire Wire Line
+	4500 2950 4600 2950
+$Comp
+L Device:R R8
+U 1 1 623306B1
+P 4750 3150
+F 0 "R8" V 4700 3300 50  0000 C CNN
+F 1 "R" V 4750 3150 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 4680 3150 50  0001 C CNN
+F 3 "~" H 4750 3150 50  0001 C CNN
+	1    4750 3150
+	0    1    1    0   
+$EndComp
+$Comp
+L local:D_Schottky_x2_KCom_AAK_Split D4
+U 2 1 623306B7
+P 4200 3050
+F 0 "D4" H 4350 3100 50  0000 C CNN
+F 1 "D_Schottky_x2_KCom_AAK_Split" H 4200 3175 50  0001 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 4200 3050 50  0001 C CNN
+F 3 "~" H 4200 3050 50  0001 C CNN
+	2    4200 3050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 3150 5350 3150
+Text Label 5350 3150 2    50   ~ 0
+I_DIO8
+Text Label 3550 3150 0    50   ~ 0
+DIO8
+Wire Wire Line
+	3550 3150 4500 3150
+Wire Wire Line
+	4350 3050 4500 3050
+Wire Wire Line
+	4500 3050 4500 3150
+Connection ~ 4500 3150
+Wire Wire Line
+	4500 3150 4600 3150
+$Comp
+L Device:R R9
+U 1 1 62348219
+P 4750 3550
+F 0 "R9" V 4700 3700 50  0000 C CNN
+F 1 "R" V 4750 3550 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 4680 3550 50  0001 C CNN
+F 3 "~" H 4750 3550 50  0001 C CNN
+	1    4750 3550
+	0    1    1    0   
+$EndComp
+$Comp
+L local:D_Schottky_x2_KCom_AAK_Split D5
+U 1 1 6234821F
+P 4200 3450
+F 0 "D5" H 4350 3500 50  0000 C CNN
+F 1 "D_Schottky_x2_KCom_AAK_Split" H 4200 3575 50  0001 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 4200 3450 50  0001 C CNN
+F 3 "~" H 4200 3450 50  0001 C CNN
+	1    4200 3450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 3550 5350 3550
+Text Label 5350 3550 2    50   ~ 0
+I_REN
+Text Label 3550 3550 0    50   ~ 0
+REN
+Wire Wire Line
+	3550 3550 4500 3550
+Wire Wire Line
+	4350 3450 4500 3450
+Wire Wire Line
+	4500 3450 4500 3550
+Connection ~ 4500 3550
+Wire Wire Line
+	4500 3550 4600 3550
+$Comp
+L Device:R R10
+U 1 1 6234822D
+P 4750 3750
+F 0 "R10" V 4700 3900 50  0000 C CNN
+F 1 "R" V 4750 3750 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 4680 3750 50  0001 C CNN
+F 3 "~" H 4750 3750 50  0001 C CNN
+	1    4750 3750
+	0    1    1    0   
+$EndComp
+$Comp
+L local:D_Schottky_x2_KCom_AAK_Split D5
+U 2 1 62348233
+P 4200 3650
+F 0 "D5" H 4350 3700 50  0000 C CNN
+F 1 "D_Schottky_x2_KCom_AAK_Split" H 4200 3775 50  0001 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 4200 3650 50  0001 C CNN
+F 3 "~" H 4200 3650 50  0001 C CNN
+	2    4200 3650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 3750 5350 3750
+Text Label 5350 3750 2    50   ~ 0
+I_IFC
+Text Label 3550 3750 0    50   ~ 0
+IFC
+Wire Wire Line
+	3550 3750 4500 3750
+Wire Wire Line
+	4350 3650 4500 3650
+Wire Wire Line
+	4500 3650 4500 3750
+Connection ~ 4500 3750
+Wire Wire Line
+	4500 3750 4600 3750
+$Comp
+L Device:R R11
+U 1 1 62348241
+P 4750 3950
+F 0 "R11" V 4700 4100 50  0000 C CNN
+F 1 "R" V 4750 3950 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 4680 3950 50  0001 C CNN
+F 3 "~" H 4750 3950 50  0001 C CNN
+	1    4750 3950
+	0    1    1    0   
+$EndComp
+$Comp
+L local:D_Schottky_x2_KCom_AAK_Split D6
+U 1 1 62348247
+P 4200 3850
+F 0 "D6" H 4350 3900 50  0000 C CNN
+F 1 "D_Schottky_x2_KCom_AAK_Split" H 4200 3975 50  0001 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 4200 3850 50  0001 C CNN
+F 3 "~" H 4200 3850 50  0001 C CNN
+	1    4200 3850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 3950 5350 3950
+Text Label 5350 3950 2    50   ~ 0
+I_~DAC
+Text Label 3550 3950 0    50   ~ 0
+~DAC
+Wire Wire Line
+	3550 3950 4500 3950
+Wire Wire Line
+	4350 3850 4500 3850
+Wire Wire Line
+	4500 3850 4500 3950
+Connection ~ 4500 3950
+Wire Wire Line
+	4500 3950 4600 3950
+$Comp
+L Device:R R12
+U 1 1 62348255
+P 4750 4150
+F 0 "R12" V 4700 4300 50  0000 C CNN
+F 1 "R" V 4750 4150 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 4680 4150 50  0001 C CNN
+F 3 "~" H 4750 4150 50  0001 C CNN
+	1    4750 4150
+	0    1    1    0   
+$EndComp
+$Comp
+L local:D_Schottky_x2_KCom_AAK_Split D6
+U 2 1 6234825B
+P 4200 4050
+F 0 "D6" H 4350 4100 50  0000 C CNN
+F 1 "D_Schottky_x2_KCom_AAK_Split" H 4200 4175 50  0001 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 4200 4050 50  0001 C CNN
+F 3 "~" H 4200 4050 50  0001 C CNN
+	2    4200 4050
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 4150 5350 4150
+Text Label 5350 4150 2    50   ~ 0
+I_~RFD
+Text Label 3550 4150 0    50   ~ 0
+~RFD
+Wire Wire Line
+	3550 4150 4500 4150
+Wire Wire Line
+	4350 4050 4500 4050
+Wire Wire Line
+	4500 4050 4500 4150
+Connection ~ 4500 4150
+Wire Wire Line
+	4500 4150 4600 4150
+$Comp
+L Device:R R13
+U 1 1 62348269
+P 4750 4350
+F 0 "R13" V 4700 4500 50  0000 C CNN
+F 1 "R" V 4750 4350 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 4680 4350 50  0001 C CNN
+F 3 "~" H 4750 4350 50  0001 C CNN
+	1    4750 4350
+	0    1    1    0   
+$EndComp
+$Comp
+L local:D_Schottky_x2_KCom_AAK_Split D7
+U 1 1 6234826F
+P 4200 4250
+F 0 "D7" H 4350 4300 50  0000 C CNN
+F 1 "D_Schottky_x2_KCom_AAK_Split" H 4200 4375 50  0001 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 4200 4250 50  0001 C CNN
+F 3 "~" H 4200 4250 50  0001 C CNN
+	1    4200 4250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 4350 5350 4350
+Text Label 5350 4350 2    50   ~ 0
+I_DAV
+Text Label 3550 4350 0    50   ~ 0
+DAV
+Wire Wire Line
+	3550 4350 4500 4350
+Wire Wire Line
+	4350 4250 4500 4250
+Wire Wire Line
+	4500 4250 4500 4350
+Connection ~ 4500 4350
+Wire Wire Line
+	4500 4350 4600 4350
+$Comp
+L Device:R R14
+U 1 1 6234827D
+P 4750 4550
+F 0 "R14" V 4700 4700 50  0000 C CNN
+F 1 "R" V 4750 4550 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 4680 4550 50  0001 C CNN
+F 3 "~" H 4750 4550 50  0001 C CNN
+	1    4750 4550
+	0    1    1    0   
+$EndComp
+$Comp
+L local:D_Schottky_x2_KCom_AAK_Split D7
+U 2 1 62348283
+P 4200 4450
+F 0 "D7" H 4350 4500 50  0000 C CNN
+F 1 "D_Schottky_x2_KCom_AAK_Split" H 4200 4575 50  0001 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 4200 4450 50  0001 C CNN
+F 3 "~" H 4200 4450 50  0001 C CNN
+	2    4200 4450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 4550 5350 4550
+Text Label 5350 4550 2    50   ~ 0
+I_EOI
+Text Label 3550 4550 0    50   ~ 0
+EOI
+Wire Wire Line
+	3550 4550 4500 4550
+Wire Wire Line
+	4350 4450 4500 4450
+Wire Wire Line
+	4500 4450 4500 4550
+Connection ~ 4500 4550
+Wire Wire Line
+	4500 4550 4600 4550
+$Comp
+L Device:R R15
+U 1 1 62348291
+P 4750 4750
+F 0 "R15" V 4700 4900 50  0000 C CNN
+F 1 "R" V 4750 4750 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 4680 4750 50  0001 C CNN
+F 3 "~" H 4750 4750 50  0001 C CNN
+	1    4750 4750
+	0    1    1    0   
+$EndComp
+$Comp
+L local:D_Schottky_x2_KCom_AAK_Split D8
+U 1 1 62348297
+P 4200 4650
+F 0 "D8" H 4350 4700 50  0000 C CNN
+F 1 "D_Schottky_x2_KCom_AAK_Split" H 4200 4775 50  0001 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 4200 4650 50  0001 C CNN
+F 3 "~" H 4200 4650 50  0001 C CNN
+	1    4200 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 4750 5350 4750
+Text Label 5350 4750 2    50   ~ 0
+I_ATN
+Text Label 3550 4750 0    50   ~ 0
+ATN
+Wire Wire Line
+	3550 4750 4500 4750
+Wire Wire Line
+	4350 4650 4500 4650
+Wire Wire Line
+	4500 4650 4500 4750
+Connection ~ 4500 4750
+Wire Wire Line
+	4500 4750 4600 4750
+$Comp
+L Device:R R16
+U 1 1 623482A5
+P 4750 4950
+F 0 "R16" V 4700 5100 50  0000 C CNN
+F 1 "R" V 4750 4950 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 4680 4950 50  0001 C CNN
+F 3 "~" H 4750 4950 50  0001 C CNN
+	1    4750 4950
+	0    1    1    0   
+$EndComp
+$Comp
+L local:D_Schottky_x2_KCom_AAK_Split D8
+U 2 1 623482AB
+P 4200 4850
+F 0 "D8" H 4350 4900 50  0000 C CNN
+F 1 "D_Schottky_x2_KCom_AAK_Split" H 4200 4975 50  0001 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-23" H 4200 4850 50  0001 C CNN
+F 3 "~" H 4200 4850 50  0001 C CNN
+	2    4200 4850
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4900 4950 5350 4950
+Text Label 5350 4950 2    50   ~ 0
+I_SRQ
+Text Label 3550 4950 0    50   ~ 0
+SRQ
+Wire Wire Line
+	3550 4950 4500 4950
+Wire Wire Line
+	4350 4850 4500 4850
+Wire Wire Line
+	4500 4850 4500 4950
+Connection ~ 4500 4950
+Wire Wire Line
+	4500 4950 4600 4950
+Wire Wire Line
+	3950 1350 3950 1650
+Wire Wire Line
+	3950 4850 4050 4850
+Wire Wire Line
+	4050 4650 3950 4650
+Connection ~ 3950 4650
+Wire Wire Line
+	3950 4650 3950 4850
+Wire Wire Line
+	4050 4450 3950 4450
+Connection ~ 3950 4450
+Wire Wire Line
+	3950 4450 3950 4650
+Wire Wire Line
+	4050 4250 3950 4250
+Connection ~ 3950 4250
+Wire Wire Line
+	3950 4250 3950 4450
+Wire Wire Line
+	4050 4050 3950 4050
+Connection ~ 3950 4050
+Wire Wire Line
+	3950 4050 3950 4250
+Wire Wire Line
+	4050 3850 3950 3850
+Connection ~ 3950 3850
+Wire Wire Line
+	3950 3850 3950 4050
+Wire Wire Line
+	4050 3650 3950 3650
+Connection ~ 3950 3650
+Wire Wire Line
+	3950 3650 3950 3850
+Wire Wire Line
+	4050 3450 3950 3450
+Connection ~ 3950 3450
+Wire Wire Line
+	3950 3450 3950 3650
+Wire Wire Line
+	4050 1650 3950 1650
+Connection ~ 3950 1650
+Wire Wire Line
+	3950 1650 3950 1850
+Wire Wire Line
+	4050 1850 3950 1850
+Connection ~ 3950 1850
+Wire Wire Line
+	3950 1850 3950 2050
+Wire Wire Line
+	4050 2050 3950 2050
+Connection ~ 3950 2050
+Wire Wire Line
+	3950 2050 3950 2250
+Wire Wire Line
+	4050 2250 3950 2250
+Connection ~ 3950 2250
+Wire Wire Line
+	3950 2250 3950 2450
+Wire Wire Line
+	4050 2450 3950 2450
+Connection ~ 3950 2450
+Wire Wire Line
+	3950 2450 3950 2650
+Wire Wire Line
+	4050 2650 3950 2650
+Connection ~ 3950 2650
+Wire Wire Line
+	3950 2650 3950 2850
+Wire Wire Line
+	4050 2850 3950 2850
+Connection ~ 3950 2850
+Wire Wire Line
+	3950 2850 3950 3050
+Wire Wire Line
+	4050 3050 3950 3050
+Connection ~ 3950 3050
+Wire Wire Line
+	3950 3050 3950 3450
+Text HLabel 2350 4550 0    50   Input ~ 0
+SHIELD
+Wire Wire Line
+	2350 4450 2700 4450
+$Comp
+L power:Earth_Protective #PWR05
+U 1 1 62778551
+P 2450 4650
+F 0 "#PWR05" H 2700 4400 50  0001 C CNN
+F 1 "Earth_Protective" H 2900 4500 50  0001 C CNN
+F 2 "" H 2450 4550 50  0001 C CNN
+F 3 "~" H 2450 4550 50  0001 C CNN
+	1    2450 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2700 4450 2700 4650
+$Comp
+L power:GND #PWR?
+U 1 1 62091E1C
+P 2700 4650
+AR Path="/62091E1C" Ref="#PWR?"  Part="1" 
+AR Path="/62065D04/62091E1C" Ref="#PWR0113"  Part="1" 
+F 0 "#PWR0113" H 2700 4400 50  0001 C CNN
+F 1 "GND" H 2705 4477 50  0000 C CNN
+F 2 "" H 2700 4650 50  0001 C CNN
+F 3 "" H 2700 4650 50  0001 C CNN
+	1    2700 4650
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2350 4550 2450 4550
+Wire Wire Line
+	2450 4550 2450 4650
+$Comp
+L power:Earth_Protective #PWR06
+U 1 1 627C1A2E
+P 8650 3950
+F 0 "#PWR06" H 8900 3700 50  0001 C CNN
+F 1 "Earth_Protective" H 9100 3800 50  0001 C CNN
+F 2 "" H 8650 3850 50  0001 C CNN
+F 3 "~" H 8650 3850 50  0001 C CNN
+	1    8650 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 62857BC0
+P 8100 1500
+AR Path="/62857BC0" Ref="C?"  Part="1" 
+AR Path="/62065D04/62857BC0" Ref="C13"  Part="1" 
+F 0 "C13" H 8215 1546 50  0000 L CNN
+F 1 "100n" H 8215 1455 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 8138 1350 50  0001 C CNN
+F 3 "~" H 8100 1500 50  0001 C CNN
+	1    8100 1500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR07
+U 1 1 62869A20
+P 8100 1350
+F 0 "#PWR07" H 8100 1200 50  0001 C CNN
+F 1 "+5V" H 8115 1523 50  0000 C CNN
+F 2 "" H 8100 1350 50  0001 C CNN
+F 3 "" H 8100 1350 50  0001 C CNN
+	1    8100 1350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR08
+U 1 1 6286A784
+P 8100 1650
+F 0 "#PWR08" H 8100 1400 50  0001 C CNN
+F 1 "GND" H 8105 1477 50  0000 C CNN
+F 2 "" H 8100 1650 50  0001 C CNN
+F 3 "" H 8100 1650 50  0001 C CNN
+	1    8100 1650
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 6286CEF1
+P 8100 5200
+AR Path="/6286CEF1" Ref="C?"  Part="1" 
+AR Path="/62065D04/6286CEF1" Ref="C14"  Part="1" 
+F 0 "C14" H 8215 5246 50  0000 L CNN
+F 1 "100n" H 8215 5155 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 8138 5050 50  0001 C CNN
+F 3 "~" H 8100 5200 50  0001 C CNN
+	1    8100 5200
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR09
+U 1 1 6286CEF7
+P 8100 5050
+F 0 "#PWR09" H 8100 4900 50  0001 C CNN
+F 1 "+5V" H 8115 5223 50  0000 C CNN
+F 2 "" H 8100 5050 50  0001 C CNN
+F 3 "" H 8100 5050 50  0001 C CNN
+	1    8100 5050
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR010
+U 1 1 6286CEFD
+P 8100 5350
+F 0 "#PWR010" H 8100 5100 50  0001 C CNN
+F 1 "GND" H 8105 5177 50  0000 C CNN
+F 2 "" H 8100 5350 50  0001 C CNN
+F 3 "" H 8100 5350 50  0001 C CNN
+	1    8100 5350
+	1    0    0    -1  
+$EndComp
+$Comp
+L Regulator_Linear:NCP1117-2.5_SOT223 U?
+U 1 1 629226F8
+P 4450 6000
+AR Path="/629226F8" Ref="U?"  Part="1" 
+AR Path="/62065D04/629226F8" Ref="U6"  Part="1" 
+F 0 "U6" H 4450 6242 50  0000 C CNN
+F 1 "NCP1117-2.5" H 4450 6151 50  0000 C CNN
+F 2 "Package_TO_SOT_SMD:SOT-223-3_TabPin2" H 4450 6200 50  0001 C CNN
+F 3 "http://www.onsemi.com/pub_link/Collateral/NCP1117-D.PDF" H 4550 5750 50  0001 C CNN
+	1    4450 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 629226FE
+P 4450 6400
+AR Path="/629226FE" Ref="#PWR?"  Part="1" 
+AR Path="/62065D04/629226FE" Ref="#PWR0130"  Part="1" 
+F 0 "#PWR0130" H 4450 6150 50  0001 C CNN
+F 1 "GND" H 4455 6227 50  0000 C CNN
+F 2 "" H 4450 6400 50  0001 C CNN
+F 3 "" H 4450 6400 50  0001 C CNN
+	1    4450 6400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 62922704
+P 4900 6400
+AR Path="/62922704" Ref="#PWR?"  Part="1" 
+AR Path="/62065D04/62922704" Ref="#PWR0131"  Part="1" 
+F 0 "#PWR0131" H 4900 6150 50  0001 C CNN
+F 1 "GND" H 4905 6227 50  0000 C CNN
+F 2 "" H 4900 6400 50  0001 C CNN
+F 3 "" H 4900 6400 50  0001 C CNN
+	1    4900 6400
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR?
+U 1 1 6292270A
+P 4000 6400
+AR Path="/6292270A" Ref="#PWR?"  Part="1" 
+AR Path="/62065D04/6292270A" Ref="#PWR0132"  Part="1" 
+F 0 "#PWR0132" H 4000 6150 50  0001 C CNN
+F 1 "GND" H 4005 6227 50  0000 C CNN
+F 2 "" H 4000 6400 50  0001 C CNN
+F 3 "" H 4000 6400 50  0001 C CNN
+	1    4000 6400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 62922710
+P 4900 6250
+AR Path="/62922710" Ref="C?"  Part="1" 
+AR Path="/62065D04/62922710" Ref="C21"  Part="1" 
+F 0 "C21" H 5015 6296 50  0000 L CNN
+F 1 "10u" H 5015 6205 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 4938 6100 50  0001 C CNN
+F 3 "~" H 4900 6250 50  0001 C CNN
+	1    4900 6250
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:C C?
+U 1 1 62922716
+P 4000 6250
+AR Path="/62922716" Ref="C?"  Part="1" 
+AR Path="/62065D04/62922716" Ref="C20"  Part="1" 
+F 0 "C20" H 4115 6296 50  0000 L CNN
+F 1 "10u" H 4115 6205 50  0000 L CNN
+F 2 "Capacitor_SMD:C_0402_1005Metric" H 4038 6100 50  0001 C CNN
+F 3 "~" H 4000 6250 50  0001 C CNN
+	1    4000 6250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4750 6000 4900 6000
+Wire Wire Line
+	4900 6000 4900 6100
+Wire Wire Line
+	4150 6000 4000 6000
+Wire Wire Line
+	4000 6000 4000 6100
+Wire Wire Line
+	4450 6300 4450 6400
+$Comp
+L power:+5V #PWR?
+U 1 1 62922727
+P 3900 5900
+AR Path="/62922727" Ref="#PWR?"  Part="1" 
+AR Path="/62065D04/62922727" Ref="#PWR0133"  Part="1" 
+F 0 "#PWR0133" H 3900 5750 50  0001 C CNN
+F 1 "+5V" H 3915 6073 50  0000 C CNN
+F 2 "" H 3900 5900 50  0001 C CNN
+F 3 "" H 3900 5900 50  0001 C CNN
+	1    3900 5900
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	3900 5900 3900 6000
+Wire Wire Line
+	3900 6000 4000 6000
+Connection ~ 4000 6000
+Wire Wire Line
+	4900 6000 5000 6000
+Wire Wire Line
+	5000 6000 5000 5900
+Connection ~ 4900 6000
+$Comp
+L power:+2V5 #PWR0134
+U 1 1 6293580B
+P 5000 5900
+F 0 "#PWR0134" H 5000 5750 50  0001 C CNN
+F 1 "+2V5" H 5015 6073 50  0000 C CNN
+F 2 "" H 5000 5900 50  0001 C CNN
+F 3 "" H 5000 5900 50  0001 C CNN
+	1    5000 5900
+	1    0    0    -1  
+$EndComp
+$EndSCHEMATC
