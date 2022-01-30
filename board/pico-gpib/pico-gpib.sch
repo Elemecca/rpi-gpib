@@ -1040,37 +1040,17 @@ Wire Wire Line
 $Comp
 L Connector_Generic:Conn_01x03 J4
 U 1 1 62CF48E1
-P 1050 4150
-F 0 "J4" H 968 4467 50  0000 C CNN
-F 1 "Debug" H 968 4376 50  0000 C CNN
-F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 1050 4150 50  0001 C CNN
-F 3 "~" H 1050 4150 50  0001 C CNN
-	1    1050 4150
+P 1000 4000
+F 0 "J4" H 918 4317 50  0000 C CNN
+F 1 "Debug" H 918 4226 50  0000 C CNN
+F 2 "Connector_PinHeader_2.54mm:PinHeader_1x03_P2.54mm_Vertical" H 1000 4000 50  0001 C CNN
+F 3 "~" H 1000 4000 50  0001 C CNN
+	1    1000 4000
 	-1   0    0    -1  
 $EndComp
-Wire Wire Line
-	1250 4050 2050 4050
-Wire Wire Line
-	2050 4050 2050 3900
-Wire Wire Line
-	2050 3900 2200 3900
-Wire Wire Line
-	1250 4150 2050 4150
-Wire Wire Line
-	2050 4150 2050 4350
-Wire Wire Line
-	2050 4350 2200 4350
-Wire Wire Line
-	1250 4250 1950 4250
-Wire Wire Line
-	1950 4250 1950 4450
-Wire Wire Line
-	1950 4450 2200 4450
-Text Label 1400 4050 0    50   ~ 0
-DEBUG_RUN
-Text Label 1400 4150 0    50   ~ 0
+Text Label 1350 4100 0    50   ~ 0
 DEBUG_CLOCK
-Text Label 1400 4250 0    50   ~ 0
+Text Label 1350 3900 0    50   ~ 0
 DEBUG_DATA
 $Comp
 L Device:Crystal Y1
@@ -1419,4 +1399,33 @@ F 3 "~" H 4400 7350 50  0001 C CNN
 	1    4400 7350
 	1    0    0    -1  
 $EndComp
+$Comp
+L power:GND #PWR0129
+U 1 1 635248E2
+P 1300 4200
+F 0 "#PWR0129" H 1300 3950 50  0001 C CNN
+F 1 "GND" H 1305 4027 50  0000 C CNN
+F 2 "" H 1300 4200 50  0001 C CNN
+F 3 "" H 1300 4200 50  0001 C CNN
+	1    1300 4200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1200 4000 1300 4000
+Wire Wire Line
+	1300 4000 1300 4200
+Wire Wire Line
+	1950 3900 1950 4450
+Wire Wire Line
+	1950 4450 2200 4450
+Wire Wire Line
+	1200 3900 1950 3900
+Wire Wire Line
+	1200 4100 2050 4100
+Wire Wire Line
+	2050 4100 2050 4350
+Wire Wire Line
+	2050 4350 2200 4350
+NoConn ~ 2200 3900
+NoConn ~ 1150 5200
 $EndSCHEMATC
