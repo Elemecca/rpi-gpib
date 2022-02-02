@@ -1,0 +1,7 @@
+
+.program counter
+
+    mov x, status
+dec_loop:
+    mov pins, x
+    jmp x--, dec_loop

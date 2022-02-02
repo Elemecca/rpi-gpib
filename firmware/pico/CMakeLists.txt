@@ -10,10 +10,16 @@ project(pico-gpib C CXX)
 pico_sdk_init()
 
 
+
 add_executable(pico_gpib
     src/main.c
 )
 
-target_link_libraries(pico_gpib pico_stdlib)
+pico_generate_pio_header(pico_gpib ${CMAKE_CURRENT_LIST_DIR}/src/counter.pio)
+
+target_link_libraries(pico_gpib
+    pico_stdlib
+    hardware_pio
+)
 
 pico_add_extra_outputs(pico_gpib)
