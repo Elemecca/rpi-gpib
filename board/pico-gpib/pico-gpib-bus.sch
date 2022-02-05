@@ -513,7 +513,7 @@ L Device:R R20
 U 1 1 62211DE6
 P 4800 2600
 F 0 "R20" V 4750 2400 50  0000 C CNN
-F 1 "R" V 4800 2600 50  0000 C CNN
+F 1 "1k" V 4800 2600 50  0000 C CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" V 4730 2600 50  0001 C CNN
 F 3 "~" H 4800 2600 50  0001 C CNN
 	1    4800 2600
@@ -539,7 +539,7 @@ L Device:R R21
 U 1 1 6231572C
 P 4800 2800
 F 0 "R21" V 4750 2600 50  0000 C CNN
-F 1 "R" V 4800 2800 50  0000 C CNN
+F 1 "1k" V 4800 2800 50  0000 C CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" V 4730 2800 50  0001 C CNN
 F 3 "~" H 4800 2800 50  0001 C CNN
 	1    4800 2800
@@ -565,7 +565,7 @@ L Device:R R22
 U 1 1 6231B318
 P 4800 3000
 F 0 "R22" V 4750 2800 50  0000 C CNN
-F 1 "R" V 4800 3000 50  0000 C CNN
+F 1 "1k" V 4800 3000 50  0000 C CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" V 4730 3000 50  0001 C CNN
 F 3 "~" H 4800 3000 50  0001 C CNN
 	1    4800 3000
@@ -602,7 +602,7 @@ L Device:R R23
 U 1 1 62321801
 P 4800 3200
 F 0 "R23" V 4750 3000 50  0000 C CNN
-F 1 "R" V 4800 3200 50  0000 C CNN
+F 1 "1k" V 4800 3200 50  0000 C CNN
 F 2 "Resistor_SMD:R_0402_1005Metric" V 4730 3200 50  0001 C CNN
 F 3 "~" H 4800 3200 50  0001 C CNN
 	1    4800 3200
@@ -635,17 +635,6 @@ Connection ~ 4350 3200
 Wire Wire Line
 	4350 3200 4650 3200
 $Comp
-L Device:R R24
-U 1 1 62330675
-P 4800 3400
-F 0 "R24" V 4750 3200 50  0000 C CNN
-F 1 "R" V 4800 3400 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 4730 3400 50  0001 C CNN
-F 3 "~" H 4800 3400 50  0001 C CNN
-	1    4800 3400
-	0    1    1    0   
-$EndComp
-$Comp
 L local:D_Schottky_x2_KCom_AAK_Split D22
 U 1 1 6233067B
 P 3900 3300
@@ -656,8 +645,6 @@ F 3 "~" H 3900 3300 50  0001 C CNN
 	1    3900 3300
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4950 3400 5300 3400
 Text Label 5300 3400 2    50   ~ 0
 I_DIO5
 Text Label 3100 3400 0    50   ~ 0
@@ -672,17 +659,6 @@ Connection ~ 4350 3400
 Wire Wire Line
 	4350 3400 4650 3400
 $Comp
-L Device:R R25
-U 1 1 62330689
-P 4800 3600
-F 0 "R25" V 4750 3400 50  0000 C CNN
-F 1 "R" V 4800 3600 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 4730 3600 50  0001 C CNN
-F 3 "~" H 4800 3600 50  0001 C CNN
-	1    4800 3600
-	0    1    1    0   
-$EndComp
-$Comp
 L local:D_Schottky_x2_KCom_AAK_Split D22
 U 2 1 6233068F
 P 3900 3500
@@ -693,8 +669,6 @@ F 3 "~" H 3900 3500 50  0001 C CNN
 	2    3900 3500
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4950 3600 5300 3600
 Text Label 5300 3600 2    50   ~ 0
 I_DIO6
 Text Label 3100 3600 0    50   ~ 0
@@ -709,17 +683,6 @@ Connection ~ 4350 3600
 Wire Wire Line
 	4350 3600 4650 3600
 $Comp
-L Device:R R26
-U 1 1 6233069D
-P 4800 3800
-F 0 "R26" V 4750 3600 50  0000 C CNN
-F 1 "R" V 4800 3800 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 4730 3800 50  0001 C CNN
-F 3 "~" H 4800 3800 50  0001 C CNN
-	1    4800 3800
-	0    1    1    0   
-$EndComp
-$Comp
 L local:D_Schottky_x2_KCom_AAK_Split D23
 U 1 1 623306A3
 P 3900 3700
@@ -730,8 +693,6 @@ F 3 "~" H 3900 3700 50  0001 C CNN
 	1    3900 3700
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4950 3800 5300 3800
 Text Label 5300 3800 2    50   ~ 0
 I_DIO7
 Text Label 3100 3800 0    50   ~ 0
@@ -746,17 +707,6 @@ Connection ~ 4350 3800
 Wire Wire Line
 	4350 3800 4650 3800
 $Comp
-L Device:R R27
-U 1 1 623306B1
-P 4800 4000
-F 0 "R27" V 4750 3800 50  0000 C CNN
-F 1 "R" V 4800 4000 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 4730 4000 50  0001 C CNN
-F 3 "~" H 4800 4000 50  0001 C CNN
-	1    4800 4000
-	0    1    1    0   
-$EndComp
-$Comp
 L local:D_Schottky_x2_KCom_AAK_Split D23
 U 2 1 623306B7
 P 3900 3900
@@ -767,8 +717,6 @@ F 3 "~" H 3900 3900 50  0001 C CNN
 	2    3900 3900
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4950 4000 5300 4000
 Text Label 5300 4000 2    50   ~ 0
 I_DIO8
 Text Label 3100 4000 0    50   ~ 0
@@ -783,17 +731,6 @@ Connection ~ 4350 4000
 Wire Wire Line
 	4350 4000 4650 4000
 $Comp
-L Device:R R30
-U 1 1 62348219
-P 4800 4400
-F 0 "R30" V 4750 4200 50  0000 C CNN
-F 1 "R" V 4800 4400 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 4730 4400 50  0001 C CNN
-F 3 "~" H 4800 4400 50  0001 C CNN
-	1    4800 4400
-	0    1    1    0   
-$EndComp
-$Comp
 L local:D_Schottky_x2_KCom_AAK_Split D24
 U 1 1 6234821F
 P 3900 4300
@@ -804,8 +741,6 @@ F 3 "~" H 3900 4300 50  0001 C CNN
 	1    3900 4300
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4950 4400 5300 4400
 Text Label 5300 4400 2    50   ~ 0
 I_REN
 Text Label 3100 4400 0    50   ~ 0
@@ -820,17 +755,6 @@ Connection ~ 4350 4400
 Wire Wire Line
 	4350 4400 4650 4400
 $Comp
-L Device:R R31
-U 1 1 6234822D
-P 4800 4600
-F 0 "R31" V 4750 4400 50  0000 C CNN
-F 1 "R" V 4800 4600 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 4730 4600 50  0001 C CNN
-F 3 "~" H 4800 4600 50  0001 C CNN
-	1    4800 4600
-	0    1    1    0   
-$EndComp
-$Comp
 L local:D_Schottky_x2_KCom_AAK_Split D24
 U 2 1 62348233
 P 3900 4500
@@ -841,8 +765,6 @@ F 3 "~" H 3900 4500 50  0001 C CNN
 	2    3900 4500
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4950 4600 5300 4600
 Text Label 5300 4600 2    50   ~ 0
 I_IFC
 Text Label 3100 4600 0    50   ~ 0
@@ -857,17 +779,6 @@ Connection ~ 4350 4600
 Wire Wire Line
 	4350 4600 4650 4600
 $Comp
-L Device:R R32
-U 1 1 62348241
-P 4800 4800
-F 0 "R32" V 4750 4600 50  0000 C CNN
-F 1 "R" V 4800 4800 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 4730 4800 50  0001 C CNN
-F 3 "~" H 4800 4800 50  0001 C CNN
-	1    4800 4800
-	0    1    1    0   
-$EndComp
-$Comp
 L local:D_Schottky_x2_KCom_AAK_Split D25
 U 1 1 62348247
 P 3900 4700
@@ -878,8 +789,6 @@ F 3 "~" H 3900 4700 50  0001 C CNN
 	1    3900 4700
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4950 4800 5300 4800
 Text Label 5300 4800 2    50   ~ 0
 I_~DAC
 Text Label 3100 4800 0    50   ~ 0
@@ -894,17 +803,6 @@ Connection ~ 4350 4800
 Wire Wire Line
 	4350 4800 4650 4800
 $Comp
-L Device:R R33
-U 1 1 62348255
-P 4800 5000
-F 0 "R33" V 4750 4800 50  0000 C CNN
-F 1 "R" V 4800 5000 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 4730 5000 50  0001 C CNN
-F 3 "~" H 4800 5000 50  0001 C CNN
-	1    4800 5000
-	0    1    1    0   
-$EndComp
-$Comp
 L local:D_Schottky_x2_KCom_AAK_Split D25
 U 2 1 6234825B
 P 3900 4900
@@ -915,8 +813,6 @@ F 3 "~" H 3900 4900 50  0001 C CNN
 	2    3900 4900
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4950 5000 5300 5000
 Text Label 5300 5000 2    50   ~ 0
 I_~RFD
 Text Label 3100 5000 0    50   ~ 0
@@ -931,17 +827,6 @@ Connection ~ 4350 5000
 Wire Wire Line
 	4350 5000 4650 5000
 $Comp
-L Device:R R34
-U 1 1 62348269
-P 4800 5200
-F 0 "R34" V 4750 5000 50  0000 C CNN
-F 1 "R" V 4800 5200 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 4730 5200 50  0001 C CNN
-F 3 "~" H 4800 5200 50  0001 C CNN
-	1    4800 5200
-	0    1    1    0   
-$EndComp
-$Comp
 L local:D_Schottky_x2_KCom_AAK_Split D26
 U 1 1 6234826F
 P 3900 5100
@@ -952,8 +837,6 @@ F 3 "~" H 3900 5100 50  0001 C CNN
 	1    3900 5100
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4950 5200 5300 5200
 Text Label 5300 5200 2    50   ~ 0
 I_DAV
 Text Label 3100 5200 0    50   ~ 0
@@ -968,17 +851,6 @@ Connection ~ 4350 5200
 Wire Wire Line
 	4350 5200 4650 5200
 $Comp
-L Device:R R35
-U 1 1 6234827D
-P 4800 5400
-F 0 "R35" V 4750 5200 50  0000 C CNN
-F 1 "R" V 4800 5400 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 4730 5400 50  0001 C CNN
-F 3 "~" H 4800 5400 50  0001 C CNN
-	1    4800 5400
-	0    1    1    0   
-$EndComp
-$Comp
 L local:D_Schottky_x2_KCom_AAK_Split D26
 U 2 1 62348283
 P 3900 5300
@@ -989,8 +861,6 @@ F 3 "~" H 3900 5300 50  0001 C CNN
 	2    3900 5300
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4950 5400 5300 5400
 Text Label 5300 5400 2    50   ~ 0
 I_EOI
 Text Label 3100 5400 0    50   ~ 0
@@ -1005,17 +875,6 @@ Connection ~ 4350 5400
 Wire Wire Line
 	4350 5400 4650 5400
 $Comp
-L Device:R R36
-U 1 1 62348291
-P 4800 5600
-F 0 "R36" V 4750 5400 50  0000 C CNN
-F 1 "R" V 4800 5600 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 4730 5600 50  0001 C CNN
-F 3 "~" H 4800 5600 50  0001 C CNN
-	1    4800 5600
-	0    1    1    0   
-$EndComp
-$Comp
 L local:D_Schottky_x2_KCom_AAK_Split D27
 U 1 1 62348297
 P 3900 5500
@@ -1026,8 +885,6 @@ F 3 "~" H 3900 5500 50  0001 C CNN
 	1    3900 5500
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4950 5600 5300 5600
 Text Label 5300 5600 2    50   ~ 0
 I_ATN
 Text Label 3100 5600 0    50   ~ 0
@@ -1042,17 +899,6 @@ Connection ~ 4350 5600
 Wire Wire Line
 	4350 5600 4650 5600
 $Comp
-L Device:R R37
-U 1 1 623482A5
-P 4800 5800
-F 0 "R37" V 4750 5600 50  0000 C CNN
-F 1 "R" V 4800 5800 50  0000 C CNN
-F 2 "Resistor_SMD:R_0402_1005Metric" V 4730 5800 50  0001 C CNN
-F 3 "~" H 4800 5800 50  0001 C CNN
-	1    4800 5800
-	0    1    1    0   
-$EndComp
-$Comp
 L local:D_Schottky_x2_KCom_AAK_Split D27
 U 2 1 623482AB
 P 3900 5700
@@ -1063,8 +909,6 @@ F 3 "~" H 3900 5700 50  0001 C CNN
 	2    3900 5700
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	4950 5800 5300 5800
 Text Label 5300 5800 2    50   ~ 0
 I_SRQ
 Text Label 3100 5800 0    50   ~ 0
@@ -1382,4 +1226,160 @@ $EndComp
 Wire Wire Line
 	4250 1550 4350 1550
 Connection ~ 4250 1550
+Wire Wire Line
+	4950 5800 5300 5800
+$Comp
+L Device:R R37
+U 1 1 623482A5
+P 4800 5800
+F 0 "R37" V 4750 5600 50  0000 C CNN
+F 1 "1k" V 4800 5800 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 4730 5800 50  0001 C CNN
+F 3 "~" H 4800 5800 50  0001 C CNN
+	1    4800 5800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4950 5600 5300 5600
+$Comp
+L Device:R R36
+U 1 1 62348291
+P 4800 5600
+F 0 "R36" V 4750 5400 50  0000 C CNN
+F 1 "1k" V 4800 5600 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 4730 5600 50  0001 C CNN
+F 3 "~" H 4800 5600 50  0001 C CNN
+	1    4800 5600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4950 5400 5300 5400
+$Comp
+L Device:R R35
+U 1 1 6234827D
+P 4800 5400
+F 0 "R35" V 4750 5200 50  0000 C CNN
+F 1 "1k" V 4800 5400 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 4730 5400 50  0001 C CNN
+F 3 "~" H 4800 5400 50  0001 C CNN
+	1    4800 5400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4950 5200 5300 5200
+$Comp
+L Device:R R34
+U 1 1 62348269
+P 4800 5200
+F 0 "R34" V 4750 5000 50  0000 C CNN
+F 1 "1k" V 4800 5200 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 4730 5200 50  0001 C CNN
+F 3 "~" H 4800 5200 50  0001 C CNN
+	1    4800 5200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4950 5000 5300 5000
+$Comp
+L Device:R R33
+U 1 1 62348255
+P 4800 5000
+F 0 "R33" V 4750 4800 50  0000 C CNN
+F 1 "1k" V 4800 5000 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 4730 5000 50  0001 C CNN
+F 3 "~" H 4800 5000 50  0001 C CNN
+	1    4800 5000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4950 4800 5300 4800
+$Comp
+L Device:R R32
+U 1 1 62348241
+P 4800 4800
+F 0 "R32" V 4750 4600 50  0000 C CNN
+F 1 "1k" V 4800 4800 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 4730 4800 50  0001 C CNN
+F 3 "~" H 4800 4800 50  0001 C CNN
+	1    4800 4800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4950 4600 5300 4600
+$Comp
+L Device:R R31
+U 1 1 6234822D
+P 4800 4600
+F 0 "R31" V 4750 4400 50  0000 C CNN
+F 1 "1k" V 4800 4600 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 4730 4600 50  0001 C CNN
+F 3 "~" H 4800 4600 50  0001 C CNN
+	1    4800 4600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4950 4400 5300 4400
+$Comp
+L Device:R R30
+U 1 1 62348219
+P 4800 4400
+F 0 "R30" V 4750 4200 50  0000 C CNN
+F 1 "1k" V 4800 4400 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 4730 4400 50  0001 C CNN
+F 3 "~" H 4800 4400 50  0001 C CNN
+	1    4800 4400
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4950 4000 5300 4000
+$Comp
+L Device:R R27
+U 1 1 623306B1
+P 4800 4000
+F 0 "R27" V 4750 3800 50  0000 C CNN
+F 1 "1k" V 4800 4000 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 4730 4000 50  0001 C CNN
+F 3 "~" H 4800 4000 50  0001 C CNN
+	1    4800 4000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4950 3800 5300 3800
+$Comp
+L Device:R R26
+U 1 1 6233069D
+P 4800 3800
+F 0 "R26" V 4750 3600 50  0000 C CNN
+F 1 "1k" V 4800 3800 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 4730 3800 50  0001 C CNN
+F 3 "~" H 4800 3800 50  0001 C CNN
+	1    4800 3800
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4950 3600 5300 3600
+$Comp
+L Device:R R25
+U 1 1 62330689
+P 4800 3600
+F 0 "R25" V 4750 3400 50  0000 C CNN
+F 1 "1k" V 4800 3600 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 4730 3600 50  0001 C CNN
+F 3 "~" H 4800 3600 50  0001 C CNN
+	1    4800 3600
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	4950 3400 5300 3400
+$Comp
+L Device:R R24
+U 1 1 62330675
+P 4800 3400
+F 0 "R24" V 4750 3200 50  0000 C CNN
+F 1 "1k" V 4800 3400 50  0000 C CNN
+F 2 "Resistor_SMD:R_0402_1005Metric" V 4730 3400 50  0001 C CNN
+F 3 "~" H 4800 3400 50  0001 C CNN
+	1    4800 3400
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC
