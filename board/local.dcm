@@ -1,5 +1,15 @@
 EESchema-DOCLIB  Version 2.0
 #
+$CMP +3V3_PI
+D Power symbol creates a global label with name "+5VP"
+K power-flag
+$ENDCMP
+#
+$CMP +5V_PI
+D Power symbol creates a global label with name "+5VP"
+K power-flag
+$ENDCMP
+#
 $CMP D_Schottky_x2_KCom_AAK_Split
 D Schottky diode
 K diode Schottky

@@ -1,6 +1,36 @@
 EESchema-LIBRARY Version 2.4
 #encoding utf-8
 #
+# +3V3_PI
+#
+DEF +3V3_PI #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -150 50 H I C CNN
+F1 "+3V3_PI" 0 140 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 0 1 0 -30 50 0 100 N
+P 2 0 1 0 0 0 0 100 N
+P 2 0 1 0 0 100 30 50 N
+X +3V3_PI 1 0 0 0 U 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
+# +5V_PI
+#
+DEF +5V_PI #PWR 0 0 Y Y 1 F P
+F0 "#PWR" 0 -150 50 H I C CNN
+F1 "+5V_PI" 0 140 50 H V C CNN
+F2 "" 0 0 50 H I C CNN
+F3 "" 0 0 50 H I C CNN
+DRAW
+P 2 0 1 0 -30 50 0 100 N
+P 2 0 1 0 0 0 0 100 N
+P 2 0 1 0 0 100 30 50 N
+X +5V_PI 1 0 0 0 U 50 50 1 1 W N
+ENDDRAW
+ENDDEF
+#
 # D_Schottky_x2_KCom_AAK_Split
 #
 DEF D_Schottky_x2_KCom_AAK_Split D 0 40 N N 2 F N
