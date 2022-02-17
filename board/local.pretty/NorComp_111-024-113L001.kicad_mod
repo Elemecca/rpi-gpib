@@ -1,6 +1,6 @@
 (footprint "NorComp_111-024-113L001" (version 20211014) (generator pcbnew)
   (layer "F.Cu")
-  (tedit 5CDD29F5)
+  (tedit 620DE549)
   (attr through_hole)
   (fp_text reference "REF**" (at 0.0254 -4.5974 unlocked) (layer "F.SilkS")
     (effects (font (size 1 1) (thickness 0.15)))
@@ -50,4 +50,9 @@
   (pad "22" thru_hole circle (at 7.56 2.145) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask) (tstamp 633a963b-5ac6-4181-b149-baaec0e755c1))
   (pad "23" thru_hole circle (at 9.72 2.145) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask) (tstamp d97759ba-4ef9-443b-97fd-7617cb99bc38))
   (pad "24" thru_hole circle (at 11.88 2.145) (size 1.7 1.7) (drill 1) (layers *.Cu *.Mask) (tstamp 597e1a93-f572-4337-ab0d-d7387026fc80))
+  (model "${KIPRJMOD}/../local.3dshapes/NorComp_111-024-113L001.step"
+    (offset (xyz 0 0 4.8))
+    (scale (xyz 1 1 1))
+    (rotate (xyz -90 0 0))
+  )
 )
