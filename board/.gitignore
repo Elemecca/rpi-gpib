@@ -2,6 +2,8 @@
 *.bck
 *.bak
 *-bak
+\#auto_saved_files\#
+*-backups/
 
 # KiCAD cache
 fp-info-cache
@@ -10,4 +12,4 @@ fp-info-cache
 *.net
 
 # plot output
-/dist/
+dist/
